@@ -1,7 +1,7 @@
 from logs.logs import p_log
 
 
-def load_file_lines(file_path):
+def load_file_lines(file_path: str) -> list:
     """Чтение строк из файла."""
     try:
         with open(file_path, 'r', encoding='utf-8') as f:
@@ -11,7 +11,7 @@ def load_file_lines(file_path):
         return []
 
 
-def save_file(lst, file_path):
+def save_file(lst: list, file_path: str) -> None:
     """Запись строк в файл."""
     with open(file_path, 'w', encoding='utf-8') as file:
         for pair in lst:
