@@ -1,0 +1,10 @@
+example1@gmail.com:Password123
+user2@yahoo.com:qwerty456
+test3@outlook.com:HelloWorld789
+sample4@icloud.com:MySecurePass!
+demo5@hotmail.com:LetMeIn2021
+user6@mail.com:StrongPass#1
+example7@protonmail.com:SuperSecret2022
+test8@aol.com:Password!@#
+sample9@live.com:MyPass1234
+demo10@ymail.com:SecurePass5678

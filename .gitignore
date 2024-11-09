@@ -1,0 +1,6 @@
+/venv/
+/.idea/
+logs/app.log.*
+__pycache__/
+utils/__pycache__/
+/email_proxy_list.txt
