@@ -7,15 +7,17 @@ from utils.file_manager import load_file_lines, save_file
 
 
 def get_email_ip():
-    while True:
-        proxies_dict = format_proxy_url(load_file_lines(PROXIES))
-        email_list = format_email(load_file_lines(USERS))
+    proxies_dict = format_proxy_url(load_file_lines(PROXIES))
+    email_list = format_email(load_file_lines(USERS))
+
+    if not email_list or not proxies_dict:
         if not email_list:
             p_log(f"Список {USERS} пуст", level='warning')
-            return
         if not proxies_dict:
-            p_log(f"Список {USERS} пуст", level='warning')
-            return
+            p_log(f"Список {PROXIES} пуст", level='warning')
+        return
+
+    while True:
         proxies_valid = is_valid(proxies_dict)
         if proxies_valid:
             email_ip_list = []
